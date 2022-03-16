@@ -1,0 +1,202 @@
+*{
+    overflow: auto;
+    /*permet d'adapter les conteneurs 
+    si on déborde !*/
+}
+
+
+body{
+    background-color: #8BA1BB;
+    font-family: Arial;
+    /*commentaire css*/
+}
+
+p.categorie{
+    background-color: black;
+    color : white;
+    display : inline-block;
+    padding : 8px 18px;
+    margin-top : -20px;
+    margin-bottom : 0px;
+    font-weight : bold; 
+    font-size : 20px
+}
+
+div.contenu{
+        background-color: white;
+        margin : 60px 10% 80px 10%;
+        padding : 0px 30px 30px 30px;
+        font-weight : bold; 
+        font-size : 20px;
+        min-width :350px;
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+        overflow: visible;
+}
+
+h1{
+    text-align : center;
+    margin-bottom : 12px;
+    margin-top: 12px;
+}
+
+p.description{
+    text-align : center;
+    max-width: 600px;
+    display: inline-block;
+    font-size : 18px
+}
+
+div.description{
+    text-align: center;
+}
+
+div.categorie{
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top : 0px;
+    overflow: visible;
+}
+
+div.separateur{
+    height:1px;
+    width:150px;
+    background-color: black;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+.centre{
+    text-align : center;
+    width : 100%;
+    height:100%;
+}
+
+div.info {
+    position: relative;
+}
+
+table.info{
+    position : absolute;
+    bottom:0;
+    width:100%;
+    color:white;
+    background-color: #6C829DC0;
+    height:60px;
+}
+
+table.info td{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+table.info th{
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+    vertical-align: bottom;
+    padding-bottom: 6px;
+}
+
+div.composants p{
+    font-size: 14px;
+    padding-left: 0px;
+    text-align: center;
+    border: 1px solid lightgray ;
+    padding: 4px 0;
+    margin-top: 4px;
+    margin-bottom: 3px;
+
+}
+
+div.desc{
+    font-size: 16px;
+    padding-left: 0px;
+
+}
+
+h2.h2{
+    font-size: 18px;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-bottom:5px solid #6C829D;
+
+}
+
+div.lien{
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+img.info{
+    display: block;
+    /*on veut limiter la taille de l'image si on agrandit la fenetre*/
+    max-height: 500px;  /*seulement ça, l'image se déforme !*/
+    object-fit: cover; /* on rajoute une impression de zoom*/
+    min-height: 200px; /* permet de garder une place en cas de chargement*/
+    background-color: lightgray;/* pour faire joli pendant l'attente ;-) */
+}
+
+div.colonne1, div.colonne2{
+    width:45%;
+}
+
+div.colonne1{
+    margin-right: 10%;
+    display: inline-block;
+    
+}
+
+div.colonne2{
+    /* on veut l'afficher à droite*/
+    float: right;
+    /*pb, colonne 1 prend toute la place, on coupe en 2 !*/
+    
+  
+}
+
+table.preparation p.numero{
+    background-color:#6C829D;
+    color: white;
+    width : 25px;
+    height:25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top:5px;
+    box-sizing: border-box; /*permet de recalculer la taille de la box sans cumuler height+padding*/
+    border-radius: 50%; /* calcul de l'arrondi de la box*/
+    margin: 0;
+}
+
+table.preparation{
+    vertical-align: top;
+
+}
+
+td.utilisation{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+table.preparation tr{
+    height:35px;
+}
+
+
+
+
+
+

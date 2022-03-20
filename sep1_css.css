@@ -24,11 +24,11 @@ p.categorie{
 
 div.contenu{
         background-color: white;
-        margin : 60px 10% 80px 10%;
-        padding : 0px 30px 30px 30px;
+        margin : 30px 8px 20px 8px;
+        padding : 0px 8px 20px 8px;
         font-weight : bold; 
         font-size : 20px;
-        min-width :350px;
+       
         box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
         overflow: visible;
 }
@@ -81,19 +81,19 @@ table.info{
     width:100%;
     color:white;
     background-color: #6C829DC0;
-    height:60px;
+    height:50px;
 }
 
 table.info td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     vertical-align: top;
 }
 
 table.info th{
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: underline;
     font-weight: bold;
     vertical-align: bottom;
@@ -148,22 +148,14 @@ img.info{
 }
 
 div.colonne1, div.colonne2{
-    width:45%;
+    width:100%;
 }
 
 div.colonne1{
-    margin-right: 10%;
     display: inline-block;
     
 }
 
-div.colonne2{
-    /* on veut l'afficher à droite*/
-    float: right;
-    /*pb, colonne 1 prend toute la place, on coupe en 2 !*/
-    
-  
-}
 
 table.preparation p.numero{
     background-color:#6C829D;
@@ -195,8 +187,49 @@ table.preparation tr{
     height:35px;
 }
 
+/*styles pour PC*/
+@media only screen and (min-width: 768px) {
+    div.contenu{
+        margin : 60px 10% 80px 10%;
+        padding : 0px 30px 30px 30px;
+        min-width: 350px;
+        
+    }
 
+    table.info{
+        height:60px;
+    }
+    
+    table.info td{
+        font-size: 14px;
+       
+    }
+    
+    table.info th{
+        font-size: 18px;
+    }
 
+    div.colonne1, div.colonne2{
+        width:45%;
+    }
+    
+    div.colonne1{
+        margin-right: 10%;
+        
+    }
+    
+    div.colonne2{
+        /* on veut l'afficher à droite*/
+        float: right;
+      
+    }
+}
 
-
-
+/*pour écrans trop grands*/
+@media only screen and (min-width: 900px) {
+    div.contenu{
+        margin-left:auto;
+        margin-right: auto;
+        width: 700px;
+    }
+}
